@@ -1,5 +1,12 @@
 import { AppLinks,FooterLink } from "@/types/app-links";
-import { RiLinkedinBoxFill, RiSlackFill, RiYoutubeFill } from "react-icons/ri";
+import {
+  RiLinkedinBoxFill,
+  RiSlackFill,
+  RiYoutubeFill,
+  RiFacebookFill,
+  RiTwitterFill,
+  RiInstagramFill
+} from "react-icons/ri";
 
 export const voyageLinks: AppLinks[] = [
   {
@@ -33,19 +40,19 @@ export const offreLinks: AppLinks[] = [
     label: "Youtube",
     baseUrl: "https://www.youtube.com",
     type: "external",
-    icon:RiYoutubeFill
+    icon: RiYoutubeFill
   },
   {
     label: "LinkedIn",
     baseUrl: "http://www.linkedin.com",
     type: "external",
-    icon:RiLinkedinBoxFill
+    icon: RiLinkedinBoxFill
   },
   {
     label: "slack",
     baseUrl: "http://www.slack.com",
     type: "external",
-    icon:RiSlackFill
+    icon: RiSlackFill
   }
 ];
 export const horaireLinks: AppLinks[] = [
@@ -74,10 +81,30 @@ export const footerLinks: FooterLink[] = [
   {
     label: "Voyages et services",
     links: voyageLinks
-  }
-  ,
+  },
   {
     label: "Offres de loisirs",
     links: offreLinks
+  }
+];
+
+export const footerSocialNetworksLinks: AppLinks[] = [
+  {
+    label: "Facebook",
+    baseUrl: "https://www.facebook.com",
+    type: "external",
+    icon: RiFacebookFill
+  },
+  {
+    label: "Twitter",
+    baseUrl: "https://www.twitter.com",
+    type: "external",
+    icon: RiTwitterFill
+  },
+  {
+    label: "Instagram",
+    baseUrl: "https://www.instagram.com",
+    type: "external",
+    icon: RiInstagramFill
   }
 ];

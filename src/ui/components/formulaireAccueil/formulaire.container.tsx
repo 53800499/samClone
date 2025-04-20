@@ -53,16 +53,15 @@ export default function FormulaireContainer() {
   return (
     <Container className="flex flex-col gap-4 my-20 px-8">
       <Formulaire form={form} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 justify-between items-center gap-2">
-          <Button
-            size="medium"
-            icon={{ icon: IoIosArrowDown }}
-            onclick={() => console.log("Bouton cliqué")}>
-            Recherche avancée
-          </Button>
-          <Button className="" variant="primary" disabled>
-            Recherche
-          </Button>
+      <div className="flex justify-between items-center gap-2">
+        <Button
+          icon={{ icon: IoIosArrowDown }}
+          onclick={() => console.log("Bouton cliqué")}>
+          Recherche avancée
+        </Button>
+        <Button className="" variant="primary" disabled>
+          Recherche
+        </Button>
       </div>
     </Container>
   );
